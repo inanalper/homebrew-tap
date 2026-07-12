@@ -1,8 +1,14 @@
 cask "kolon" do
-  version "0.1.0"
-  sha256 "8b617790185f8d689d8d975a9ca3b1bc318a97af45557dc05201360762388998"
+  version "0.2.0"
 
-  url "https://github.com/inanalper/Kolon/releases/download/v#{version}/Kolon-#{version}.zip"
+  on_arm do
+    sha256 "eaae72c5ea09c2c74aa761dcd3133c3b552d57605583d111437a855c450fd5aa"
+    url "https://github.com/inanalper/Kolon/releases/download/v#{version}/Kolon-#{version}-arm64.zip"
+  end
+  on_intel do
+    sha256 "34c701cd787dca066e5f3bbedcb71751c1384eebade4ff236310e705cb17589f"
+    url "https://github.com/inanalper/Kolon/releases/download/v#{version}/Kolon-#{version}-x86_64.zip"
+  end
   name "Kolon"
   desc "Quick Look extension for Apache Parquet files"
   homepage "https://github.com/inanalper/Kolon"
