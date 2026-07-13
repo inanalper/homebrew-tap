@@ -1,12 +1,12 @@
 cask "kolon" do
-  version "0.2.2"
+  version "0.2.3"
 
   on_arm do
-    sha256 "8bc196da332303007dda5fff248e070c5d9034a50ad87a04ecbf396d9b54e4ed"
+    sha256 "ddd8a5c7d69cb1c884a749b9e5ebb0abd64352f1ac7bc4c68425e573d040fa6d"
     url "https://github.com/inanalper/Kolon/releases/download/v#{version}/Kolon-#{version}-arm64.zip"
   end
   on_intel do
-    sha256 "bb02dff60668f1c581cb9f490fb8b0040ad9253c7930a01c4fae8a15106e1296"
+    sha256 "b7154afee67c2482bbeb5e50555b72e15430e880061e88aecd083d03dc8a032a"
     url "https://github.com/inanalper/Kolon/releases/download/v#{version}/Kolon-#{version}-x86_64.zip"
   end
   name "Kolon"
